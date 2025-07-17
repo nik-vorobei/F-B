@@ -1,0 +1,48 @@
+.gallery-card {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid var(--color-dark);
+	height: 493px;
+
+	&__image-wrapper {
+		display: flex;
+		justify-content: center;
+		padding-block: 30px;
+		background-color: var(--color-dark);
+		height: 180px;
+		max-width: 100%;
+		position: relative;
+	}
+
+	&__number {
+		@include square(24px);
+
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		top: 16px;
+		left: 16px;
+		line-height: 1.28;
+		color: var(--color-gray);
+		border: 1px solid currentColor;
+		border-radius: 50%;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		padding: 16px 16px 24px;
+		height: 313px;
+	}
+
+	&__description {
+		margin-block: 8px 14px;
+		color: var(--color-gray);
+	}
+
+	&__button {
+		display: block;
+		margin-top: auto;
+	}
+}

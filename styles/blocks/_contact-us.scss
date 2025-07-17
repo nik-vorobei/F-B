@@ -1,0 +1,33 @@
+.contact-us {
+	position: relative;
+	z-index: 1;
+
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: url('../../images/contact-us/bg.jpg') center/cover no-repeat;
+		z-index: -1;
+		width: 100%;
+
+		pointer-events: none !important;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		row-gap: 24px;
+		padding-block: 60px;
+	}
+
+	&__title {
+		margin-bottom: -8px;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		row-gap: 24px;
+	}
+}

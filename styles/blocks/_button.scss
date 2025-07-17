@@ -1,0 +1,129 @@
+.button {
+	@include flex-center(true);
+
+	height: var(--button-height);
+	padding-inline: 29px;
+	color: var(--color-green);
+	background-color: transparent;
+	border: var(--border);
+
+	@include hover {
+		&:not(:disabled) {
+			color: var(--color-dark);
+			background-color: var(--color-green);
+		}
+	}
+
+	&:focus:not(:disabled) {
+		color: var(--color-green);
+		background-color: transparent;
+		outline: var(--outline);
+		outline-offset: 2px;
+	}
+
+	&:active:not(:disabled) {
+		color: var(--color-dark) !important;
+		background-color: var(--color-green-dark) !important;
+		border: var(--border-dark) !important;
+		outline: none !important;
+	}
+
+	&:disabled {
+		color: var(--color-gray) !important;
+		border: 1px solid currentColor !important;
+		pointer-events: none;
+	}
+
+	&--alt {
+		padding-inline: 26px;
+		font-weight: 700;
+		color: var(--color-dark);
+		background-color: var(--color-green);
+
+		@include hover {
+			&:not(:disabled) {
+				background-color: var(--color-green-light-alt);
+				border: 1px solid var(--color-green-light-alt);
+			}
+		}
+
+		&:focus:not(:disabled) {
+			color: var(--color-dark);
+			background-color: var(--color-green);
+			border: var(--border);
+		}
+
+		&:disabled {
+			color: var(--color-dark-alt) !important;
+			background-color: var(--color-gray) !important;
+			border: 1px solid var(--color-gray) !important;
+
+			span {
+				opacity: 0.5;
+			}
+		}
+	}
+
+	&--icon-1 {
+		@include reset-button;
+		@include flex-center;
+		@include square-alt(48px);
+
+		background-color: transparent !important;
+
+		@include hover {
+			&:not(:disabled) {
+				color: var(--color-green-light-alt);
+			}
+		}
+
+		&:focus:not(:disabled) {
+			color: var(--color-green);
+			outline: var(--outline);
+			outline-offset: -10px;
+		}
+
+		&:active:not(:disabled) {
+			color: var(--color-green-dark) !important;
+			background-color: transparent !important;
+			border: none !important;
+		}
+
+		&:disabled {
+			border: none !important;
+		}
+	}
+
+	&--icon-2 {
+		@include reset-button;
+		@include flex-center;
+		@include square-alt(36px);
+
+		color: var(--color-gray);
+		background-color: transparent !important;
+
+		@include hover {
+			&:not(:disabled) {
+				color: var(--color-green);
+			}
+		}
+
+		&:focus:not(:disabled) {
+			color: var(--color-gray);
+			outline: var(--outline);
+			outline-offset: 0;
+		}
+
+		&:active:not(:disabled) {
+			color: var(--color-green-dark) !important;
+			background-color: transparent !important;
+			border: none !important;
+			outline: none !important;
+		}
+
+		&:disabled {
+			color: var(--color-dark) !important;
+			border: none !important;
+		}
+	}
+}

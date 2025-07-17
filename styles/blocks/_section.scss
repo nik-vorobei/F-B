@@ -1,0 +1,15 @@
+.section {
+	padding-block: var(--section-padding-y);
+
+	&--hidden-x {
+		overflow-x: hidden;
+	}
+
+	&:first-child {
+		padding-top: 0;
+	}
+
+	&:last-child {
+		padding-bottom: 0;
+	}
+}

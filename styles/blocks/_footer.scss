@@ -1,0 +1,17 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--color-gray);
+
+	&__body {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		background-color: var(--color-dark);
+	}
+
+	&__extra {
+		margin: 3px 0 3px;
+	}
+}

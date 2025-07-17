@@ -1,0 +1,55 @@
+.hero {
+	position: relative;
+	z-index: 1;
+
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: url('../../images/hero/hero-bg.jpg') center/cover no-repeat;
+		z-index: -1;
+		width: 100%;
+		pointer-events: none !important;
+	}
+
+	@include mobile-s {
+		&::before {
+			background: url('../../images/hero/hero-bg-mobile-s.jpg') center/cover
+				no-repeat;
+		}
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		row-gap: 16px;
+		width: 625px;
+		height: 540px;
+
+		@include desktop {
+			height: 470px;
+		}
+
+		@include tablet {
+			height: 380px;
+		}
+
+		@include mobile {
+			justify-content: end;
+			height: 330px;
+		}
+
+		@include mobile-s {
+			width: 255px;
+		}
+	}
+
+	&__link {
+		display: inline-flex;
+		align-items: center;
+		column-gap: 8px;
+		height: 48px;
+		max-width: max-content;
+	}
+}
