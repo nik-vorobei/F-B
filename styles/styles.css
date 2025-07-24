@@ -254,8 +254,7 @@ svg * {
   border: 0 !important;
   padding: 0 !important;
   white-space: nowrap !important;
-  -webkit-clip-path: inset(100%) !important;
-          clip-path: inset(100%) !important;
+  clip-path: inset(100%) !important;
   clip: rect(0 0 0 0) !important;
   overflow: hidden !important;
 }
@@ -389,7 +388,7 @@ h4,
     color: var(--color-light);
   }
 }
-.field__input:focus:-moz-placeholder-shown {
+.field__input:focus:-moz-placeholder {
   background-color: var(--color-light);
   outline: var(--outline);
   outline-offset: 2px;
@@ -402,19 +401,19 @@ h4,
 .field__input:focus:placeholder-shown::-moz-placeholder {
   color: var(--color-gray);
 }
-.field__input:focus:-moz-placeholder-shown::placeholder {
+.field__input:focus:-moz-placeholder::placeholder {
   color: var(--color-gray);
 }
 .field__input:focus:placeholder-shown::placeholder {
   color: var(--color-gray);
 }
-.field__input:invalid:not(:-moz-placeholder-shown) {
+.field__input:invalid:not(:-moz-placeholder) {
   border: 1px solid var(--color-red);
 }
 .field__input:invalid:not(:placeholder-shown) {
   border: 1px solid var(--color-red);
 }
-.field__input:not(:-moz-placeholder-shown) {
+.field__input:not(:-moz-placeholder) {
   outline: 0;
   color: var(--color-dark);
   background-color: var(--color-gray);
@@ -431,7 +430,7 @@ h4,
   left: 16px;
   bottom: 100%;
 }
-.field__input:invalid:not(:-moz-placeholder-shown) + .field__error {
+.field__input:invalid:not(:-moz-placeholder) + .field__error {
   display: block;
 }
 .field__input:invalid:not(:placeholder-shown) + .field__error {
@@ -1018,6 +1017,7 @@ h4,
   align-items: start;
   row-gap: 24px;
   padding-block: 60px;
+  max-width: 825px;
 }
 .contact-us__title {
   margin-bottom: -8px;

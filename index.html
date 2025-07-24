@@ -108,32 +108,34 @@
 			<section class="section section--hidden-x">
 				<div class="section__body">
 					<div class="hero">
-						<div class="hero__body container">
-							<h1 class="hero__title">
-								Крупнейшая коллекция природных артефактов
-							</h1>
-							<div class="hero__description hidden-mobile">
-								<p>
-									Являясь всего лишь частью общей картины, интерактивные
-									прототипы, которые представляют собой яркий пример
-									европейского типа политической и социальной культуры.
-								</p>
+						<div class="hero__body-wrapper container">
+							<div class="hero__body">
+								<h1 class="hero__title">
+									Крупнейшая коллекция природных артефактов
+								</h1>
+								<div class="hero__description hidden-mobile">
+									<p>
+										Являясь всего лишь частью общей картины, интерактивные
+										прототипы, которые представляют собой яркий пример
+										европейского типа политической и социальной культуры.
+									</p>
+								</div>
+								<a href="/" class="hero__link link link--alt-1"
+									>Исследовать
+									<svg
+										width="44"
+										height="15"
+										viewBox="0 0 44 15"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M43.7071 8.20711C44.0976 7.81658 44.0976 7.18342 43.7071 6.79289L37.3431 0.428932C36.9526 0.0384078 36.3195 0.0384078 35.9289 0.428932C35.5384 0.819457 35.5384 1.45262 35.9289 1.84315L41.5858 7.5L35.9289 13.1569C35.5384 13.5474 35.5384 14.1805 35.9289 14.5711C36.3195 14.9616 36.9526 14.9616 37.3431 14.5711L43.7071 8.20711ZM0 8.5L43 8.5V6.5L0 6.5L0 8.5Z"
+											fill="#BAE249"
+										/>
+									</svg>
+								</a>
 							</div>
-							<a href="/" class="hero__link link link--alt-1"
-								>Исследовать
-								<svg
-									width="44"
-									height="15"
-									viewBox="0 0 44 15"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										d="M43.7071 8.20711C44.0976 7.81658 44.0976 7.18342 43.7071 6.79289L37.3431 0.428932C36.9526 0.0384078 36.3195 0.0384078 35.9289 0.428932C35.5384 0.819457 35.5384 1.45262 35.9289 1.84315L41.5858 7.5L35.9289 13.1569C35.5384 13.5474 35.5384 14.1805 35.9289 14.5711C36.3195 14.9616 36.9526 14.9616 37.3431 14.5711L43.7071 8.20711ZM0 8.5L43 8.5V6.5L0 6.5L0 8.5Z"
-										fill="#BAE249"
-									/>
-								</svg>
-							</a>
 						</div>
 					</div>
 				</div>
@@ -488,51 +490,53 @@
 			<section class="section">
 				<div class="section__body">
 					<div class="contact-us">
-						<div class="contact-us__body container">
-							<h2 class="contact-us__title">Помочь проекту</h2>
-							<div class="contact-us__description hidden-mobile">
-								<p>
-									Равным образом, экономическая повестка сегодняшнего дня не
-									даёт нам иного выбора, кроме определения прогресса
-									профессионального сообщества. Как принято считать, элементы
-									политического процесса рассмотрены исключительно в разрезе
-									маркетинговых и финансовых предпосылок.
-								</p>
-							</div>
-							<div class="contact-us__form">
-								<div class="contact-us__field field">
-									<label for="name" class="field__label visually-hidden"
-										>Имя</label
-									>
-									<input
-										class="field__input"
-										id="name"
-										name="name"
-										placeholder="Имя"
-									/>
+						<div class="contact-us__body-wrapper container">
+							<div class="contact-us__body">
+								<h2 class="contact-us__title">Помочь проекту</h2>
+								<div class="contact-us__description hidden-mobile">
+									<p>
+										Равным образом, экономическая повестка сегодняшнего дня не
+										даёт нам иного выбора, кроме определения прогресса
+										профессионального сообщества. Как принято считать, элементы
+										политического процесса рассмотрены исключительно в разрезе
+										маркетинговых и финансовых предпосылок.
+									</p>
 								</div>
-								<div class="contact-us__field field">
-									<label for="email" class="field__label visually-hidden"
-										>Email</label
-									>
+								<div class="contact-us__form">
+									<div class="contact-us__field field">
+										<label for="name" class="field__label visually-hidden"
+											>Имя</label
+										>
+										<input
+											class="field__input"
+											id="name"
+											name="name"
+											placeholder="Имя"
+										/>
+									</div>
+									<div class="contact-us__field field">
+										<label for="email" class="field__label visually-hidden"
+											>Email</label
+										>
 
-									<input
-										class="field__input"
-										id="email"
-										name="email"
-										placeholder="Email"
-										type="email"
-										required
-									/>
-									<div class="field__error">Недопустимый формат</div>
+										<input
+											class="field__input"
+											id="email"
+											name="email"
+											placeholder="Email"
+											type="email"
+											required
+										/>
+										<div class="field__error">Недопустимый формат</div>
+									</div>
 								</div>
+								<button
+									class="contact-us__button button button--alt"
+									type="button"
+								>
+									Отправить
+								</button>
 							</div>
-							<button
-								class="contact-us__button button button--alt"
-								type="button"
-							>
-								Отправить
-							</button>
 						</div>
 					</div>
 				</div>
