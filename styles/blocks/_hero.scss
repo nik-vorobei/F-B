@@ -6,7 +6,7 @@
 		content: '';
 		position: absolute;
 		inset: 0;
-		background: url('../../images/hero/hero-bg.jpg') center/cover no-repeat;
+		background: url('../images/hero/hero-bg.jpg') center/cover no-repeat;
 		z-index: -1;
 		width: 100%;
 		pointer-events: none !important;
@@ -14,7 +14,7 @@
 
 	@include mobile-s {
 		&::before {
-			background: url('../../images/hero/hero-bg-mobile-s.jpg') center/cover
+			background: url('../images/hero/hero-bg-mobile-s.jpg') center/cover
 				no-repeat;
 		}
 	}

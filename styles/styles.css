@@ -769,14 +769,14 @@ h4,
   content: "";
   position: absolute;
   inset: 0;
-  background: url("../../images/hero/hero-bg.jpg") center/cover no-repeat;
+  background: url("../images/hero/hero-bg.jpg") center/cover no-repeat;
   z-index: -1;
   width: 100%;
   pointer-events: none !important;
 }
 @media (max-width: 480px) {
   .hero::before {
-    background: url("../../images/hero/hero-bg-mobile-s.jpg") center/cover no-repeat;
+    background: url("../images/hero/hero-bg-mobile-s.jpg") center/cover no-repeat;
   }
 }
 .hero__body {
@@ -1006,7 +1006,7 @@ h4,
   content: "";
   position: absolute;
   inset: 0;
-  background: url("../../images/contact-us/bg.jpg") center/cover no-repeat;
+  background: url("../images/contact-us/bg.jpg") center/cover no-repeat;
   z-index: -1;
   width: 100%;
   pointer-events: none !important;
